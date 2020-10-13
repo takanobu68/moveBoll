@@ -100,26 +100,26 @@ function createRenderer() {
 
 function onKeyDown(e) {
 	if (e.keyCode == LEFT) {
-		ADD = -0.3;
+		ADD = -1;
 		rotate = 0.2
 		sphereMovePositionX += ADD;
 		sphereRotationZ += rotate;
 	}
 	else if (e.keyCode == RIGHT) {
-		ADD = 0.3;
+		ADD = 1;
 		rotate = -0.2;
 		sphereMovePositionX += ADD;
 		sphereRotationZ += rotate;
 
 	}
 	else if (e.keyCode == UP) {
-		ADD = -0.3;
+		ADD = -1;
 		rotate = -0.2
 		sphereMovePositionZ += ADD;
 		sphereRotationX += rotate;
 	}
 	else if (e.keyCode == DOWN) {
-		ADD = 0.3;
+		ADD = 1;
 		rotate = 0.2;
 		sphereMovePositionZ += ADD;
 		sphereRotationX += rotate;
